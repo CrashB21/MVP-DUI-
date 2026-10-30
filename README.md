@@ -1,35 +1,41 @@
-# frontend-sample-app
+# Catálogo de Eventos USM - MVP
 
-Basic Frontend Development Environment to start an app with Webpack
+Este repositorio contiene el Producto Mínimo Viable (MVP) del Catálogo de Eventos de la Universidad Técnica Federico Santa María, desarrollado para la asignatura Diseño de Interfaces de Usuario (DIU).
 
-This repo includes `Webpack` to start an environment to build frontend views using `React`.
+**🤖 Nota sobre el Desarrollo:** 
+La interfaz visual y los componentes interactivos de este proyecto fueron generados utilizando **Lovable** (herramienta de desarrollo con Inteligencia Artificial), cumpliendo con la alternativa permitida en la pauta de exportar el código a React. La aplicación funciona sin backend, utilizando exclusivamente datos estáticos (Mock Data) para cumplir las metas del usuario.
 
-### Requirements
+## 🛠 Versiones y Entorno de Desarrollo
 
-- Node >= 16.13.1
-- npm >= 8.1.2
+Para que el proyecto compile y funcione correctamente sin errores de compatibilidad, es estrictamente necesario utilizar las siguientes versiones:
 
-### Quick start
+* **Node.js:** v22.x (Se recomienda gestionar la versión usando NVM: `nvm use 22` o `nvm install 22`).
+* **npm:** Incluido con Node 22.
+* **Framework:** React + Vite (Exportado de Lovable).
 
-Install dependences
+---
 
-```
-npm install
-```
+## 🚀 Instrucciones de Instalación y Ejecución
 
-Launch environment
+Sigue estos comandos exactos en tu terminal para levantar el entorno local:
 
-```
+**1. Clonar el repositorio y entrar a la carpeta:**
+\`\`\`bash
+git clone https://github.com/CrashB21/MVP-DUI-.git
+cd MVP-DUI-
+\`\`\`
+*(Nota: si la carpeta base se llama `frontend-sample-app`, ingresa a esa carpeta en su lugar).*
+
+**2. Instalar las dependencias:**
+Es **crucial** utilizar la bandera `--legacy-peer-deps` para que NPM ignore los conflictos de versiones generados por las librerías exportadas desde Lovable.
+\`\`\`bash
+npm install --legacy-peer-deps
+\`\`\`
+
+**3. Iniciar el servidor de desarrollo:**
+\`\`\`bash
 npm run dev
-```
+\`\`\`
 
-Now you can open http://localhost:5050
-
-### Packages included
-
-- [Webpack](https://webpack.js.org/)
-- [React Router](https://reactrouter.com/en/main)
-
-### About stylesheets
-
-- Sample stylesheets were written using the [BEM](https://getbem.com/) structure
+**4. Visualizar la aplicación:**
+Haz clic en el enlace local que arroje la terminal (usualmente `http://localhost:5173` o `http://localhost:8080`) para abrir el catálogo interactivo en tu navegador.
