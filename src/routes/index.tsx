@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { Search, Calendar, Clock, GraduationCap, MapPin, Monitor, RotateCcw } from "lucide-react";
 
@@ -120,9 +120,9 @@ function Index() {
                   <Tag icon={MapPin} tone={tones.campus}>{e.campus}</Tag>
                   <Tag icon={Monitor} tone={tones.modalidad}>{e.modalidad}</Tag>
                 </div>
-                <button type="button" className="mt-5 w-full rounded-md bg-primary py-2.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 sm:mt-auto sm:translate-y-0">
+                <Link to="/evento/$id" params={{ id: String(e.id) }} className="mt-5 flex w-full items-center justify-center rounded-md bg-primary py-2.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 sm:mt-auto sm:translate-y-0">
                   Ver detalles
-                </button>
+                </Link>
               </article>
             ))}
           </div>
